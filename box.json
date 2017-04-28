@@ -1,0 +1,35 @@
+{
+    "alias": "vh.phar",
+    "directories": [
+        "src",
+        "vendor/cocur/slugify/Resources/rules"
+    ],
+    "files": [
+        "vendor/autoload.php",
+        "composer.json",
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "in": [
+                "vendor/cocur/",
+                "vendor/composer/",
+                "vendor/psr/",
+                "vendor/symfony/"
+            ],
+            "exclude": [
+                "test",
+                "tests",
+                "Tests"
+            ]
+        }
+    ],
+    "git-commit": "git-commit",
+    "git-version": "git-version",
+    "main": "bin/main.php",
+    "output": "vh-@git-version@.phar",
+    "stub": true,
+    "web": false,
+    "chmod": "0775"
+}
